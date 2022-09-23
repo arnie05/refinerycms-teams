@@ -8,18 +8,17 @@ Gem::Specification.new do |s|
   s.date              = '2014-10-06'
   s.summary           = 'Team extension for Refinery CMS'
   s.email             = %q{info@bisscomm.com}
-  s.authors           = ['Brice Sanchez']
+  s.authors           = ['Brice Sanchez','Arnaud Augier']
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
 
   # Runtime dependencies
-  s.add_dependency 'refinerycms-core', '~> 3.0.0'
-  s.add_dependency 'actionview-encoded_mail_to', '~> 1.0.5'
-  s.add_dependency 'acts_as_indexed', '~> 0.8.0'
-  s.add_dependency 'globalize', ['>= 4.0.0', '< 5.2']
-  s.add_dependency 'friendly_id', '~> 5.1.0'
-  s.add_dependency 'friendly_id-globalize', '>= 1.0.0.alpha2'
+  s.add_dependency    %q{refinerycms},       ['>= 3.0.0', '< 5.0']
+  s.add_dependency    %q{decorators},        %q{~> 2.0.0}
+  s.add_dependency    %q{globalize},         %q{~> 5.0}
+  s.add_dependency %q{friendly_id}, %q{~> 5.2.1}
+  s.add_dependency %q{friendly_id-globalize}, %q{>= 1.0.0.alpha2}
 
   # Development dependencies (usually used for testing)
-  s.add_development_dependency 'refinerycms-testing', '~> 3.0.0'
+  s.add_development_dependency %q{refinerycms-testing}
 end
