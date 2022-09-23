@@ -13,6 +13,7 @@ module Refinery
       acts_as_indexed :fields => [:fullname]
 
       belongs_to :photo, :class_name => '::Refinery::Image'
+      belongs_to :photo_onhover, :class_name => '::Refinery::Image', optional: true
 
       has_many :categorizations, :dependent => :destroy, :foreign_key => :team_id
       has_many :categories, :through => :categorizations, :source => :teams_category

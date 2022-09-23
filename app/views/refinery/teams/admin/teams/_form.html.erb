@@ -49,6 +49,15 @@
   </div>
 
   <div class='field'>
+    <%= f.label :photo_onhover -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_onhover_id,
+               :image => @team.photo_onhover,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :email -%>
     <%= f.text_field :email, :class => 'larger widest' -%>
   </div>

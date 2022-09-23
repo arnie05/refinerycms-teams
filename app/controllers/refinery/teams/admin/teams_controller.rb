@@ -38,7 +38,7 @@ module Refinery
 
         def permitted_team_params
           [
-            :fullname, :job_title, :body, :photo_id, :email, :draft,
+            :fullname, :job_title, :body, :photo_id, :photo_onhover_id, :email, :draft,
             category_ids: []
           ]
         end
