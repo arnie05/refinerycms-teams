@@ -60,6 +60,7 @@ fr:
         job_title: Titre de l'emploi
         body: Corps
         photo: Photo
-        photo: Photo au survol
+        photo_onhover: Photo au survol
+        url_photo_onhover: Url pour photo au survol
         email: Courriel
         draft: Enregistrer comme un brouillon

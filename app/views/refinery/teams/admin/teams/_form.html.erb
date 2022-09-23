@@ -49,6 +49,11 @@
   </div>
 
   <div class='field'>
+    <%= f.label :url_photo_onhover -%>
+    <%= f.text_field :url_photo_onhover, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :photo_onhover -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
